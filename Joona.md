@@ -1,4 +1,1 @@
-Das is´ne´tolle datei
-
-
-Nö. Eher nicht so.
+// Das ist eine super tolle datei
