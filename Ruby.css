@@ -30,5 +30,7 @@ p {
 }
 
 a {
+  cursor: pointer;
+  color: black;
   text-decoration: none;
 }
