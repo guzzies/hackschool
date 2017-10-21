@@ -8,6 +8,5 @@ Das is ne Datei vom Dominik, der Developer werden will ^^
 - o_O
 - My name's your name
 - Etwas hinzu und pusht das mal
-- xD zu viele Changes
 - \(O_o)/
 - {sweet}
