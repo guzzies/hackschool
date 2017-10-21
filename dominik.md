@@ -8,5 +8,6 @@ Das is ne Datei vom Dominik, der Developer werden will ^^
 - o_O
 - My name's your name
 - Etwas hinzu und pusht das mal
-- \(O_o)/
+- (O_o)/
 - never ever
+- Blubb
