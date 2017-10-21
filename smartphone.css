@@ -14,9 +14,16 @@ em {
 }
 
 .chrome {
-  width: 500px;
-  padding-right: 200px;
-  padding-bottom: 200px:
+  width: 100px;
+  padding-left: 400px;
+}
+
+.random {
+  width: 100px;
+}
+
+.test {
+  width: 100px;
 }
 
 p {
