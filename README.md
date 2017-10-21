@@ -1,2 +1,2 @@
 # hackschool
-Our hackschool for Guzz
+Our hackschool for Guzz.
