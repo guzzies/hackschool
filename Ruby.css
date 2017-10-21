@@ -1,3 +1,34 @@
 body {
-  background-color: #d8a9bb;
+  background-color: #bbd8a9;
+  padding-top: 50px;
+  text-align: center;
+}
+
+strong {
+  cursor: pointer;
+  color: #c6a9d8;
+}
+
+strong:hover {
+  color: #a9d3d8;
+}
+
+em {
+  text-shadow: 1px 1px 2px grey;
+}
+
+#flowergirl {
+  width: 500px;
+}
+
+h1 {
+  text-shadow: 3px 3px 4px white;
+}
+
+p {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
 }
