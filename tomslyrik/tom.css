@@ -1,6 +1,7 @@
 body {
   background-color: #AFCEFC;
-  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: cursive;
 }
 
@@ -16,7 +17,15 @@ em {
   width: 199.99999999999px;
 }
 
-span {
+#wichtiges {
   text-shadow: 2px 2px 4px white;
   font-size: 24.99px;
+}
+
+h1:hover, h2:hover, p:hover, #wichtiges:hover, .Bapfel:hover {
+  font-family: monospace;
+}
+
+#powerpoet:hover {
+  background-color: black;
 }
