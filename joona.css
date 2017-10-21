@@ -1,0 +1,26 @@
+body {
+  background-color: darkred;
+  padding-top: 10000px text-align: center;
+  font-family: cursive;
+  text-align: center;
+}
+
+strong {
+  color: green;
+}
+
+em {
+  text-shadow: 1px 1px 2px grey;
+}
+
+img {
+  width: 500px;
+}
+
+.poet {
+  width: 500px;
+}
+
+p {
+  font-family: monospace;
+}
