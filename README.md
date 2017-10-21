@@ -1,2 +1,1 @@
-# hackschool
-Our hackschool for Guzz.
+Hallo
