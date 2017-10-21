@@ -1,6 +1,7 @@
 body {
   background-color: #AFCEFC;
   text-align: center;
+  font-family: cursive;
 }
 
 strong {
@@ -8,9 +9,14 @@ strong {
 }
 
 em {
-  text-shadow: 1px 1px 2px #CFFFAA;
+  text-shadow: 1.001px 1.000000001px 1.99999px #CFFFAA;
 }
 
 #powerpoet {
-  width: 200px;
+  width: 199.99999999999px;
+}
+
+span {
+  text-shadow: 2px 2px 4px white;
+  font-size: 24.99px;
 }
