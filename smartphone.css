@@ -1,5 +1,5 @@
 body {
-  background-color: darkred;
+  background-color: Green;
   padding-top: 10000px text-align: center;
   font-family: cursive;
   text-align: center;
@@ -13,8 +13,10 @@ em {
   text-shadow: 1px 1px 2px grey;
 }
 
-.crome {
+.chrome {
   width: 500px;
+  padding-right: 200px;
+  padding-bottom: 200px:
 }
 
 p {
