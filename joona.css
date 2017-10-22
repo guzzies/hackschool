@@ -1,8 +1,7 @@
 body {
-  background-color: darkred;
-  padding-top: 10000px text-align: center;
-  font-family: cursive;
-  text-align: center;
+  background-color: white;
+  font-family: fantasy;
+  margin: 0px;
 }
 
 strong {
@@ -21,6 +20,39 @@ img {
   width: 500px;
 }
 
-p {
-  font-family: monospace;
+#top {
+  background-color: #3498db;
+}
+
+#top a {
+  color: black;
+  text-decoration: none;
+  font-size: 234%;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 16px;
+}
+
+#nav a {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  color: #2980b9;
+}
+
+#yellow {
+  border-top: solid 5px yellow;
+}
+
+#blue {
+  border-top: solid 5px blue;
+}
+
+#green {
+  border-top: solid 5px green;
+}
+
+#red {
+  border-top: solid 5px red;
 }
