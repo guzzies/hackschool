@@ -12,10 +12,11 @@ body {
 
 #google {
   width: 480px;
+  margin-top: 200px;
 }
 
 #onscreenbuttons {
   width: 480px;
-  margin-top: 670px;
+  margin-top: 470px;
   font-weight: bold;
 }

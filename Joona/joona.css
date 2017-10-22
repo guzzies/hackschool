@@ -5,7 +5,7 @@ body {
 }
 
 strong {
-  color: green;
+  color: darkred;
 }
 
 em {
@@ -60,4 +60,9 @@ img {
 
 #shooter {
   align-items: center;
+}
+
+#swtext {
+  margin-left: 180px;
+  margin-top: 40px;
 }
