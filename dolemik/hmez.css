@@ -2,7 +2,25 @@ body {
   background-image: linear-gradient(90deg, #9999ff 0%, #6666ff 100%);
   text-align: center;
   font-family: FNT;
-  width: 100%;
+  width: 98%;
+  scroll-behavior: smooth;
+}
+
+.tone {
+  padding-left: 80px;
+  text-align: center;
+  border-style: none;
+  width: 400px;
+  object-position: center;
+  vertical-align: middle;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.ttwo {
+  text-align: center;
+  border-style: none;
 }
 
 img {
@@ -19,17 +37,36 @@ img {
   color: #FFFFFF;
 }
 
-.seven {
-  border-style: solid;
-  border-width: 1px 5px 2px 10px;
+p.seven {
+  border-style: double;
+  border-width: 5px 2px 10px 2px;
   font-size: 30px;
   color: #FFFFFF;
   border-color: #FFFFFF;
-  padding-left: 20%;
-  padding-right: 20%;
+  width: 400px;
 }
 
-#player {
-  width: 500;
-  height: 40;
+.two {
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  font-size: 30px;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  padding-left: 5%;
+  padding-right: 5%;
+  border
+}
+
+audio {
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 10px 2px 10px 2px;
+  font-size: 30px;
+}
+
+audio:hover {
+  border-color: #DDDDFF;
+  border-style: solid;
+  border-width: 11px 3px 11px 3px;
+  font-size: 30px;
 }
