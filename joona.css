@@ -57,3 +57,7 @@ img {
 #red {
   border-top: solid 5px red;
 }
+
+#shooter {
+  align-items: center;
+}
