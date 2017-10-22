@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+  padding-top: 10000px text-align: center;
+  font-family: cursive;
+  text-align: center;
+  margin: 0px;
+}
+
+.imputbox {
+  width: 500px;
+}
+
+#google {
+  width: 480px;
+}
+
+#onscreenbuttons {
+  width: 480px;
+  margin-top: 670px;
+  font-weight: bold;
+}

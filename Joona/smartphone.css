@@ -15,8 +15,15 @@ em {
 
 .chrome {
   width: 100px;
+  margin-top: 325px;
+  margin-left: 330px;
 }
 
 p {
   font-family: monospace;
+}
+
+#onscreenbuttons {
+  width: 480px;
+  font-weight: bold;
 }
