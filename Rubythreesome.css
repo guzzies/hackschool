@@ -1,5 +1,21 @@
-body {
-  background-color: #d7e8cc;
+body, html {
+  background-color: #f1e7fb;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.content {
+  height: 100%;
+  padding-top: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #f1fbe7;
+}
+
+.nav {
+  position: absolute;
   right: 200px;
   top: 100px;
   text-align: right;

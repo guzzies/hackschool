@@ -1,9 +1,3 @@
-body {
-  background-color: #bbd8a9;
-  padding-top: 50px;
-  text-align: center;
-}
-
 strong {
   cursor: pointer;
   color: #c6a9d8;
@@ -21,8 +15,9 @@ em {
   width: 500px;
 }
 
-h1 {
-  text-shadow: 3px 3px 4px white;
+#logo {
+  margin-top: -50px;
+  width: 300px;
 }
 
 p {
