@@ -1,0 +1,29 @@
+body {
+  background-color: Green;
+  padding-top: 10000px text-align: center;
+  font-family: cursive;
+  text-align: center;
+}
+
+strong {
+  color: ;
+}
+
+em {
+  text-shadow: 1px 1px 2px grey;
+}
+
+.chrome {
+  width: 100px;
+  margin-top: 325px;
+  margin-left: 330px;
+}
+
+p {
+  font-family: monospace;
+}
+
+#onscreenbuttons {
+  width: 480px;
+  font-weight: bold;
+}
