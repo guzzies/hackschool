@@ -1,0 +1,31 @@
+strong {
+  cursor: pointer;
+  color: #c6a9d8;
+}
+
+strong:hover {
+  color: #a9d3d8;
+}
+
+em {
+  text-shadow: 1px 1px 2px grey;
+}
+
+#flowergirl {
+  width: 500px;
+}
+
+#logo {
+  margin-top: -20px;
+  width: 300px;
+}
+
+p {
+  font-family: inherit;
+}
+
+a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
