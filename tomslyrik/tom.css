@@ -1,9 +1,10 @@
 body {
-  background-color: #AFCEFC;
+  background-color: #00AC00;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   font-family: cursive;
+  color: orange;
 }
 
 strong {
@@ -29,4 +30,8 @@ h1:hover, h2:hover, p:hover, #wichtiges:hover, .Bapfel:hover {
 
 #powerpoet:hover {
   background-color: black;
+}
+
+#wassollichtun {
+  width: 400px;
 }
