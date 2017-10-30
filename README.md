@@ -1,3 +1,4 @@
 # hackschool
 Our hackschool for Guzz.
-With Cruara
+With Cruara.
+What is Curara?
