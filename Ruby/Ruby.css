@@ -1,3 +1,11 @@
+.name {
+  color: blue;
+}
+
+.wichtiger-name {
+  color: red;
+}
+
 strong {
   cursor: pointer;
   color: #c6a9d8;
