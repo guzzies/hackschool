@@ -8,10 +8,13 @@ function hallo() {
     name = 'Nameless';
   } else if (name === '') {
     name = 'Nameless';
+    element.className = 'name3';
   } else if (name === 'Blubb') {
     name = 'Tom'
+    element.className = 'name3';
   } else if (name === 'Ruby') {
     name = 'Cruara'
+    element.className = 'name2';
   }
   name = 'Hallo, ' + name;
   element.innerHTML = name;
