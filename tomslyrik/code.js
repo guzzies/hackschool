@@ -3,6 +3,8 @@ function hallo() {
   var element = document.getElementById('name');
   element.innerHTML = name;
   if (name === 'Tom') {
-    element.className = 'wichtiger-name';
+    element.classList.add('wichtig');
+  } else {
+    element.classList.remove('wichtig');
   }
 }
