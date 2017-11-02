@@ -11,3 +11,20 @@ button {
   font-family: 'FNT';
   src: url('FNT2.ttf') format('truetype');
 }
+
+.name {
+  color: blue;
+}
+
+.name2 {
+  color: red;
+}
+
+.name2:hover {
+  color: orange;
+  font-size: 20;
+}
+
+.name3 {
+  color: orange;
+}
