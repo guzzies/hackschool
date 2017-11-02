@@ -4,27 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link rel="stylesheet" type="text/css" href="js.css" />
 </head>
 
 
 <body>
-  <span id="name"></span>
-  <button onclick="hallo()">I bims, 1 Button vong Klicklichkeit herr.</button>
+  <span id="name" class="name"></span>
+  <button onclick="hallo()">I bims, EINZ Button vong Klicklichkeit herr.</button>
 </body>
-<script type="text/javascript">
-  function hallo() {
-    var name = prompt('Wie heißt du?');
-    if (name == 'Kiara') {
-      name = 'Cruara';
-    } else if (name == 'null') {
-      name = 'Nameless';
-    } else if (name == '') {
-      name = 'Nameless';
-    }
-    name = 'Hallo, ' + name;
-    var element = document.getElementById('name');
-    element.innerHTML = name;
-  }
+<script type="text/javascript" src="schkirpt.js">
 </script>
 
 </html>

@@ -1,0 +1,30 @@
+button {
+  border-style: double;
+  border-width: medium;
+  background-color: white;
+  color: black;
+  font-family: FNT;
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: 'FNT';
+  src: url('FNT2.ttf') format('truetype');
+}
+
+.name {
+  color: blue;
+}
+
+.name2 {
+  color: red;
+}
+
+.name2:hover {
+  color: orange;
+  font-size: 40;
+}
+
+.name3 {
+  color: orange;
+}
