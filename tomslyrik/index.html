@@ -1,8 +1,14 @@
 <!doctype html>
+<meta charset="UTF-8">
 <html>
   <head>
     <script type="text/javascript">
-      alert('Hallo');
+      var yearsOld = prompt('How old are you?');
+      if (yearsOld < 13) {
+        alert('Sie müssen über 12 Jahre alt sein!');
+      } else {
+        alert('Cool, dass Sie ' + yearsOld + ' alt sind.');
+      }
     </script>
   </head>
   <body>
