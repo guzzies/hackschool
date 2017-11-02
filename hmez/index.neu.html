@@ -7,14 +7,23 @@
   <link rel="stylesheet" type="text/css" href="hmez.neu.css" />
 </head>
 <script type="text/javascript">
-  var name = prompt("Wie ist dein Name?");
-  if (name == "HMeZ") {
-    alert("Hey. Du bist der Überboss und alle anderen Rapper sind nur kleine Missits, die keine Ahnung von der Materie haben.");
-
+  var name = prompt('Wie ist dein Name?');
+  if (name == 'Kiara') {
+    name = 'Cruara';
+  } else if (name == 'Dominik') {
+    name = 'HMeZ';
+  } else if (name == '') {
+    name = 'nameless';
+  }
+  if (name == 'HMeZ') {
+    alert('Hey. Du bist der Überboss und alle anderen Rapper sind nur kleine Missits, die keine Ahnung von der Materie haben.');
+  } else if (name == 'Tom') {
+    alert('Hey Tom. Bei dir kommt jetzt kein "!", weil das ist ja nur für FBI-Agenten!')
+  } else if (name == 'nameless') {
+    alert('Hallo, Mensch ohne Name.');
   } else {
     alert('Hallo, ' + name + ' !');
-    alert("Das ! ist eigentlich nur für FBI-Agenten. Ich habe es benutzt. Was schließen wir daraus?");
-
+    alert('Das ! ist eigentlich nur für FBI-Agenten. Ich habe es benutzt. Was schließen wir daraus?');
   }
 </script>
 
