@@ -1,17 +1,21 @@
 function hallo() {
   var name = prompt('Wie heißt du?');
+  var element = document.getElementsById('name')
   if (name == 'Kiara') {
     name = 'Cruara';
-  } else if (name == null) {
+    element.className = 'name2';
+  } else if (name === null) {
     name = 'Nameless';
-  } else if (name == '') {
+  } else if (name === '') {
     name = 'Nameless';
-  } else if (name == 'Blubb') {
+    element.className = 'name3';
+  } else if (name === 'Blubb') {
     name = 'Tom'
-  } else if (name == 'Ruby') {
+    element.className = 'name3';
+  } else if (name === 'Ruby') {
     name = 'Cruara'
+    element.className = 'name2';
   }
   name = 'Hallo, ' + name;
-  var element = document.getElementById('name');
   element.innerHTML = name;
 }
