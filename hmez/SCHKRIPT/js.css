@@ -1,0 +1,13 @@
+button {
+  border-style: double;
+  border-width: medium;
+  background-color: white;
+  color: black;
+  font-family: FNT;
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: 'FNT';
+  src: url('FNT2.ttf') format('truetype');
+}
