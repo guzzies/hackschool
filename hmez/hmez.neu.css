@@ -42,8 +42,8 @@ audio:hover {
 .musikbereich {
   text-align: center;
   position: absolute;
-  right: 60px;
-  top: 300px;
+  right: 200px;
+  top: 200px;
 }
 
 .musikbereich .name {
@@ -52,7 +52,7 @@ audio:hover {
 
 .titelei {
   position: relative;
-  width: 600px;
+  width: 800px;
   height: 230px;
 }
 
