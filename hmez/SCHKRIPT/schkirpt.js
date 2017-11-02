@@ -1,6 +1,7 @@
 function hallo() {
   var name = prompt('Wie heißt du?');
   var element = document.getElementById('name');
+  element.className = 'name';
   if (name == 'Kiara') {
     name = 'Cruara';
     element.className = 'name2';
