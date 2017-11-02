@@ -19,6 +19,23 @@ body, html {
   background-color: #f1fbe7;
 }
 
+<<<<<<< HEAD
+=======
+#red {
+  background-color: #3498db;
+}
+
+#red a {
+  color: black;
+  text-decoration: none;
+  font-size: 234%;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 16px;
+  text-align: left;
+}
+
+>>>>>>> 843a9ff57a11592a5f895c1269dba63d51d35047
 #nav a {
   width: 25%;
   display: inline-block;
