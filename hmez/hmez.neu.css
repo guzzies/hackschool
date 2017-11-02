@@ -68,7 +68,7 @@ audio:hover {
   transform: translateX(-50%);
 }
 
-@font-face {
+.lol @font-face {
   font-family: 'FNT';
   src: url('FNT2.ttf') format('truetype');
 }
