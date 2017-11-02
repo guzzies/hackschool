@@ -1,9 +1,7 @@
-.main {
-  background: red;
-  color: white;
+.name {
+  color: blue;
 }
 
-span {
-  background: yellow;
-  color: black;
+.wichtiger-name {
+  color: red;
 }
