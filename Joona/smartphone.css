@@ -3,6 +3,8 @@ body {
   padding-top: 10000px text-align: center;
   font-family: cursive;
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 strong {
@@ -14,9 +16,9 @@ em {
 }
 
 .chrome {
-  width: 100px;
-  margin-top: 325px;
-  margin-left: 330px;
+  width: 80px;
+  margin-top: 0px;
+  margin-left: 190px;
 }
 
 p {
@@ -24,6 +26,10 @@ p {
 }
 
 #onscreenbuttons {
-  width: 480px;
+  width: 280px;
   font-weight: bold;
+}
+
+#smlogo img {
+  width: 10px;
 }
