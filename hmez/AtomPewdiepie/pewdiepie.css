@@ -8,13 +8,30 @@ fieldset {
   border-color: black;
 }
 
+@keyframes example {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 20ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 legend {
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: nowrap;
   color: white;
-  background-color: #2e5631;
+  background-color: #d64d4d;
   border-style: solid;
   border-width: thin;
   border-color: black;
   border-radius: 20px;
+  animation: example 4s steps(48) forwards;
+  animation-iteration-count: infinite;
 }
 
 body {
