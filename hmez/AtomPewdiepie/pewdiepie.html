@@ -10,15 +10,13 @@
 
 <body>
   <script type="text/javascript" src="pewdiepie.js"></script>
-  <form action="form()">
-    <fieldset class="form">
-      <legend>Deine Informationen</legend>
-      Alter:
-      <input type="number" />
-      <input type="submit" />
-    </fieldset>
+  <fieldset class="form" name="myform">
+    <legend>Deine Informationen</legend>
+    Name:
+    <input id="namer" type="text" />
+    <button type="button" onclick="nameVerwerten()">Abschicken</button>
+  </fieldset>
 
-  </form>
 </body>
 
 </html>
