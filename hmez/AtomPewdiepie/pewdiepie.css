@@ -1,7 +1,7 @@
 fieldset {
   color: #2e5631;
   background-color: #caf9cd;
-  width: 300px;
+  width: 400px;
   border-radius: 5px;
   border-style: solid;
   border-width: thin;
@@ -14,10 +14,19 @@ legend {
   border-style: solid;
   border-width: thin;
   border-color: black;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 body {
   text-align: center;
   background-color: #caf9cd;
+}
+
+button {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  background-color: #2e5631;
+  color: white;
 }
