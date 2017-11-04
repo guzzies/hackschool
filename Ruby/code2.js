@@ -1,7 +1,10 @@
-var alter = promt();
+var alda = {
+  name: 'Joona',
+  alter: 14,
+  schuhgroesse: 42,
+  ausgeben: function(){
+    console.log(this.name)
+  }
+};
 
-if (alter < 18) {
-  window.open('http://bienemaja.de');
-} else {
-  window.open('http://myreadingmanga.info');
-}
+alda.ausgeben();
