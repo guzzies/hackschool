@@ -4,5 +4,7 @@ function hallo() {
   element.innerHTML = name;
   if (name === 'Ruby') {
     element.className = 'wichtiger-name'
+  } else {
+    element.className = 'name';
   }
 }

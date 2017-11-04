@@ -1,0 +1,23 @@
+fieldset {
+  color: #2e5631;
+  background-color: #caf9cd;
+  width: 300px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
+
+legend {
+  color: white;
+  background-color: #2e5631;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 5px;
+}
+
+body {
+  text-align: center;
+  background-color: #caf9cd;
+}
