@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+.name {
+  color: blue;
+}
+
+.wichtiger-name {
+  color: red;
+}
+
+#buttton1 {
+  text-align: center;
+}
