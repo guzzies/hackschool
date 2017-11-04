@@ -1,16 +1,9 @@
-function zahlEingeben() {
-  var zahl = prompt();
-  var wurzel = wurzelZiehen(zahl);
-  wurzelZiehen(zahl);
-  console.log(wurzel)
-}
+var alda = {
+  name: 'Joona',
+  alter: 14,
+  schuhgroesse: 42
+};
 
-function wurzelZiehen(zahl) {
-  var wurzel = (Math.sqrt(zahl));
-  return wurzel;
-}
-
-for (var i =0; i<500; i++){
-  var wurzel = wurzelZiehen(i);
-  console.log('Wurzel von' + i + ':' + wurzel);
-}
+console.log(alda.schuhgroesse);
+alda.schuhgroesse = 44;
+console.log(alda.schuhgroesse);
