@@ -1,9 +1,10 @@
 var alda = {
   name: 'Joona',
   alter: 14,
-  schuhgroesse: 42
+  schuhgroesse: 42,
+  ausgeben: function(){
+    console.log(this.name)
+  }
 };
 
-console.log(alda.schuhgroesse);
-alda.schuhgroesse = 44;
-console.log(alda.schuhgroesse);
+alda.ausgeben();
