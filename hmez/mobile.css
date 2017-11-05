@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(90deg, #9999ff 0%, #6666ff 100%);
+  background-color: #6666ff;
   font-family: FNT;
 }
 
@@ -42,8 +42,9 @@ audio:hover {
 .musikbereich {
   text-align: center;
   position: absolute;
-  right: 200px;
-  top: 30px;
+  top: 270px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .musikbereich .name {
@@ -54,6 +55,8 @@ audio:hover {
   position: relative;
   width: 800px;
   height: 230px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .titelei .avatar, .titelei .name {
