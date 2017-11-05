@@ -6,29 +6,8 @@
   <title>HMeZ - Rap für dich</title>
   <link rel="stylesheet" type="text/css" href="hmez.neu.css" />
   <link href="favicon.ico" rel="shortcut icon" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@{{version-number}}/dist/amplitude.js"></script>
 </head>
-<script type="text/javascript">
-  var name = prompt('Wie ist dein Name?');
-  if (name == 'Kiara') {
-    name = 'Cruara';
-  } else if (name == 'Dominik') {
-    name = 'HMeZ';
-  } else if (name == 'Ruby') {
-    name = 'Cruara';
-  } else if (name == '') {
-    name = 'nameless';
-  }
-  if (name == 'HMeZ') {
-    alert('Hey. Du bist der Überboss und alle anderen Rapper sind nur kleine Missits, die keine Ahnung von der Materie haben.');
-  } else if (name == 'Tom') {
-    alert('Hey Tom. Bei dir kommt jetzt kein "!", weil das ist ja nur für FBI-Agenten!')
-  } else if (name == 'nameless') {
-    alert('Hallo, Mensch ohne Name.');
-  } else {
-    alert('Hallo, ' + name + ' !');
-    alert('Das ! ist eigentlich nur für FBI-Agenten. Ich habe es benutzt. Was schließen wir daraus?');
-  }
-</script>
 
 <body>
   <div class="titelei">
@@ -44,40 +23,122 @@
       Rap for you
     </div>
   </div>
-  <div class="musikbereich">
-    <div class="song">
-      <div class="name">
-        Reflect
-      </div>
-      <div class="player">
-        <audio src="Reflect.mp3" controls="controls"></audio>
-      </div>
-    </div><br />
-    <div class="song">
-      <div class="name">
-        Ausnahmetalent
-      </div>
-      <div class="player">
-        <audio src="Ausnahmetalent.mp3" controls="controls"></audio>
-      </div>
-    </div><br />
-    <div class="song">
-      <div class="name">
-        Pulse
-      </div>
-      <div class="player">
-        <audio src="PULSE.mp3" controls="controls"></audio>
-      </div>
-    </div><br />
-    <div class="song">
-      <div class="name">
-        Weiße Augen 3
-      </div>
-      <div class="player">
-        <audio src="WeißeAugenIII.mp3" controls="controls"></audio>
-      </div>
-    </div>
+  <div class="player">
+    <script type="text/javascript">
+      Amplitude.init({
+        "songs": [{
+            "name": "Wolf",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/WOLF.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          },
+          {
+            "name": "Victory",
+            "artist": "HMeZ feat. T-Jes",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/VICTORY.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          },
+          {
+            "name": "-+-",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/-+-.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          } {
+            "name": "Totalversagen",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/TOTAl.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          } {
+            "name": "Wieder",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/Wieder.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          } {
+            "name": "Bruce Wayne",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/Bruce.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          } {
+            "name": "Meisterschaft",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/Meister.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          } {
+            "name": "Rebell",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/Rebell.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          } {
+            "name": "Schwarze Augen",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/SCHWAUGEN.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          } {
+            "name": "Jede Wette",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/Wette.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          } {
+            "name": "Rap",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/Rap.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          } {
+            "name": "Ich hau ab",
+            "artist": "HMeZ",
+            "album": "WOLF(FREETAPE)",
+            "url": "http://mezler-home.synology.me/dominik/app/TRACKS/Abhauen.wav",
+            "cover_art_url": "http://mezler-home.synology.me/dominik/app/TRACKS/COVERART.png"
+          }
+        ]
+      });
+    </script>
   </div>
+  <!-- <div class="musikbereich"> -->
+  <!-- <div class="song"> -->
+  <!-- <div class="name"> -->
+  <!-- Reflect -->
+  <!-- </div> -->
+  <!-- <div class="player"> -->
+  <!-- <audio src="Reflect.mp3" controls="controls"></audio> -->
+  <!-- </div> -->
+  <!-- </div><br /> -->
+  <!-- <div class="song"> -->
+  <!-- <div class="name"> -->
+  <!-- Ausnahmetalent -->
+  <!-- </div> -->
+  <!-- <div class="player"> -->
+  <!-- <audio src="Ausnahmetalent.mp3" controls="controls"></audio> -->
+  <!-- </div> -->
+  <!-- </div><br /> -->
+  <!-- <div class="song"> -->
+  <!-- <div class="name"> -->
+  <!-- Pulse -->
+  <!-- </div> -->
+  <!-- <div class="player"> -->
+  <!-- <audio src="PULSE.mp3" controls="controls"></audio> -->
+  <!-- </div> -->
+  <!-- </div><br /> -->
+  <!-- <div class="song"> -->
+  <!-- <div class="name"> -->
+  <!-- Weiße Augen 3 -->
+  <!-- </div> -->
+  <!-- <div class="player"> -->
+  <!-- <audio src="WeißeAugenIII.mp3" controls="controls"></audio> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
 </body>
 
 </html>
