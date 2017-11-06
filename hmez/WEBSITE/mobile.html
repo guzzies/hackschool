@@ -8,6 +8,7 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
   <title>HMeZ - Rap für dich</title>
   <link rel="stylesheet" type="text/css" href="mobile.css" />
@@ -16,11 +17,9 @@
   <script type="text/javascript">
     if (WURFL.is_mobile === true) {} else {
       window.location.replace("index.neu.html");
-
     }
     if (WURFL.form_factor === "Smartphone") {} else {
       window.location.replace("index.neu.html");
-
     }
   </script>
 </head>
@@ -38,7 +37,20 @@
     <div class="motto">
       Rap for you
     </div>
-  </div>
+    <div class="musikbereich">
+      <audio id="player"></audio>
+      <div class="playcont">
+        <img src="./imgs/rew.png" id="c_back" class="controllbutton" />
+        <fieldset class="player_fieldset">
+          <legend class="songinfo" id="songtitle">Songtitel</legend>
+          <p class="songinfo" id="album">Album</p>
+          <p class="songinfo" id="artist">Interpret</p>
+        </fieldset>
+        <img src="./imgs/play.png" id="c_play" class="controllbutton" />
+        <img src="./imgs/ff.png" id="c_f" class="controllbutton" />
+      </div>
+    </div>
+    <!-- </div>
   <div class="musikbereich">
     <div class="song">
       <div class="name">
@@ -72,7 +84,10 @@
         <audio src="WeißeAugenIII.mp3" controls="controls"></audio>
       </div>
     </div>
-  </div>
+  </div> -->
+
+    <!-- Some Imports -->
+    <script type="text/javascript" src="playPhaenom.js"></script>
 </body>
 
 </html>

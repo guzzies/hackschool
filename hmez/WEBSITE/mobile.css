@@ -75,3 +75,56 @@ audio:hover {
   font-family: 'FNT';
   src: url('FNT2.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'FNT2';
+  src: url('playerfont.ttf') format('truetype');
+}
+
+.playcont {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+}
+
+.controllbutton {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.songinfo {
+  font-family: FNT2;
+  color: white;
+  font-size: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+legend {
+  border-style: solid;
+  border-radius: 20px;
+  border-width: thin;
+  height: 25px;
+  border-color: white;
+  position: relative;
+  margin 0;
+  border-bottom-style: none;
+}
+
+fieldset {
+  height: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  flex-wrap: wrap;
+  border-color: white;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: thin;
+}
+
+#album {
+  margin-top: 0;
+}
