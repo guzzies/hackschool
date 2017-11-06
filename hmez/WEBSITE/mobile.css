@@ -103,14 +103,18 @@ audio:hover {
 
 legend {
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 0;
   border-width: thin;
   height: 25px;
-  width: 30ch;
+  max-width: 30ch;
   border-color: white;
   position: relative;
   margin 0;
   border-bottom-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  flex-wrap: wrap;
 }
 
 fieldset {
@@ -122,8 +126,9 @@ fieldset {
   flex-wrap: wrap;
   border-color: white;
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 0px;
   border-width: thin;
+  width: 344.406px;
 }
 
 #album {
