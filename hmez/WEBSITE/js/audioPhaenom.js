@@ -19,8 +19,7 @@ var maxIndex = 3; //the number of songs, you've definded minus one.
 //don't change this vars.
 var playerSet = false; //if the player isn't setted up, there will be an error-alert. This var will change, when the player will setup itself.
 var index = 0; //set the index to 0, it will begin with the 1st song in the array.
-
-var timeKeeper = 0;
+var timeKeeper = 0; //this var will keep the current play time
 
 var player = document.getElementById('player'); //switch 'player' with the id of your <audio> tag
 var scroller = document.getElementById('trackLaenge'); //switch 'trackLaenge' with the id of your <input type="range">
@@ -44,7 +43,7 @@ function play() { //when play button pressed
     document.getElementById('songtitle').innerHTML = names[index]; //Change the songdescription
     document.getElementById('album').innerHTML = albums[index]; //Change the songdescription
     document.getElementById('artist').innerHTML = artists[index]; //Change the songdescription
-    document.getElementById('c_play').src = './imgs/pause.png'; //Virtualize, that there is now the option, to pause the playing
+    document.getElementById('c_play').src = './imgs/pause.svg'; //Virtualize, that there is now the option, to pause the playing
     player.src = songs[index]; //set the new source from the array
     player.currentTime = timeKeeper; //restart the track from the old time, if the track only was paused
     player.play(); //start the playing-process
@@ -89,7 +88,7 @@ function jumpForward() { //jump to the next song
 function pause() { //pause playing
   player.pause(); //pause the actual player (<audio>)
   timeKeeper = player.currentTime; //keep the tracktime in mind!
-  document.getElementById('c_play').src = './imgs/play.png'; //show, that now, there is the option to continue playing
+  document.getElementById('c_play').src = './imgs/play.svg'; //show, that now, there is the option to continue playing
   document.getElementById('c_play').removeEventListener('click', pause, false); //change eventlisteners
   document.getElementById('c_play').addEventListener('click', play, false); //chane eventlisteners
 }

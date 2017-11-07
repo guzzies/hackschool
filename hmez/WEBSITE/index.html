@@ -8,11 +8,11 @@
 <html>
 
 <head>
-
+  <meta name="theme-color" content="#6666ff">
   <meta charset="utf-8">
   <title>HMeZ - Rap für dich</title>
   <link rel="stylesheet" type="text/css" href="mobile.css" />
-  <link href="favicon.ico" rel="shortcut icon" />
+  <link href="AVATAR.png" rel="shortcut icon" />
   <!-- <script type="text/javascript" src="http://wurfl.io/wurfl.js"></script>
   <script type="text/javascript">
     if (WURFL.is_mobile === true) {} else {
@@ -28,7 +28,7 @@
   <div class="titelei">
     <div class="nameavatar">
       <div class="avatar">
-        <img src="AVATAR.png"></img>
+        <img class="avatarpic" src="AVATAR.png"></img>
       </div>
       <div class="name">
         HMeZ
@@ -37,66 +37,30 @@
     <div class="motto">
       Rap for you
     </div>
-    <div class="musikbereich">
-      <div id="slidecontainer">
-        <input type="range" min="0" max="0" value="0" class="slider" id="trackLaenge">
-      </div>
-      <div class="small">
-
-      </div>
-      <audio id="player"></audio>
-      <div class="playcont">
-        <fieldset class="player_fieldset">
-          <legend class="songinfo" id="songtitle">Songtitel</legend>
-          <p class="songinfo" id="album">Album</p>
-          <p class="songinfo" id="artist">Interpret</p>
-        </fieldset>
-      </div>
-
-      <div class="playercont">
-        <img src="./imgs/rew.png" id="c_back" class="controllbutton" />
-        <img src="./imgs/play.png" id="c_play" class="controllbutton" />
-        <img src="./imgs/ff.png" id="c_f" class="controllbutton" />
-      </div>
-    </div>
-    <!-- </div>
+  </div>
   <div class="musikbereich">
-    <div class="song">
-      <div class="name">
-        Reflect
-      </div>
-      <div class="player">
-        <audio src="Reflect.mp3" controls="controls"></audio>
-      </div>
-    </div><br />
-    <div class="song">
-      <div class="name">
-        Ausnahmetalent
-      </div>
-      <div class="player">
-        <audio src="Ausnahmetalent.mp3" controls="controls"></audio>
-      </div>
-    </div><br />
-    <div class="song">
-      <div class="name">
-        Pulse
-      </div>
-      <div class="player">
-        <audio src="PULSE.mp3" controls="controls"></audio>
-      </div>
-    </div><br />
-    <div class="song">
-      <div class="name">
-        Weiße Augen 3
-      </div>
-      <div class="player">
-        <audio src="WeißeAugenIII.mp3" controls="controls"></audio>
-      </div>
-    </div>
-  </div> -->
 
-    <!-- Some Imports -->
-    <script type="text/javascript" src="./js/audioPhaenom.js"></script>
+    <audio id="player"></audio>
+    <!-- <img class="cover" id="cover" src="./imgs/NO_ALBUM.png" /> -->
+    <div id="slidecontainer">
+      <input type="range" min="0" max="0" value="0" class="slider" id="trackLaenge">
+    </div><br /><br /><br />
+    <div class="playercont">
+      <img src="./imgs/previous.svg" id="c_back" class="controllbutton" />
+      <img src="./imgs/play.svg" id="c_play" class="controllbutton" />
+      <img src="./imgs/next.svg" id="c_f" class="controllbutton" />
+    </div>
+    <div class="playcont">
+
+
+      <span class="songinfo" id="album">Album</span>
+      <span class="songinfo" id="songtitle">Songtitel</span>
+      <span class="songinfo" id="artist">Interpret</span>
+
+    </div>
+  </div>
+  <!-- Some Imports -->
+  <script type="text/javascript" src="./js/audioPhaenom.js"></script>
 </body>
 
 </html>

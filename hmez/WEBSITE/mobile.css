@@ -84,21 +84,33 @@ audio:hover {
 .playcont {
   display: flex;
   flex-direction: row;
-  flex-flow: row;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 600px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  font-family: FNT2;
+}
+
+#songtitle {
+  font-size: 30px;
+  width: 200px;
+  text-align: center;
+}
+
+#album {
+  font-size: 20px;
+  width: 200px;
+  text-align: right;
+}
+
+#artist {
+  font-size: 20px;
+  width: 200px;
+  text-align: left;
 }
 
 .controllbutton {
   margin: 2px;
-}
-
-#c_back, #c_f {
-  width: 70px;
-  height: 70px;
-}
-
-#c_play {
   width: 100px;
   height: 100px;
 }
@@ -109,40 +121,6 @@ audio:hover {
   font-size: 20px;
   height: 20px;
   margin: 5px;
-}
-
-legend {
-  border-style: solid;
-  border-radius: 0;
-  border-width: thin;
-  height: 25px;
-  max-width: 30ch;
-  border-color: white;
-  position: relative;
-  margin 0;
-  border-bottom-style: none;
-  display: flex;
-  flex-direction: column;
-  flex-flow: column;
-  flex-wrap: wrap;
-}
-
-fieldset {
-  height: 80px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-flow: column;
-  flex-wrap: wrap;
-  border-color: white;
-  border-style: solid;
-  border-radius: 0px;
-  border-width: thin;
-  width: 344.406px;
-}
-
-#album {
-  margin-top: 0;
 }
 
 #slidecontainer {
