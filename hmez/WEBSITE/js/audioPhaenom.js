@@ -7,10 +7,11 @@
 //if you want to use audioPhaenom with the additional Mousetrap-functionality.
 
 //At first, lets set up the error-messeages:
+var err_noSong =`[audioPhaenom:] No songs are defined.`;
+var err_songUndefined = `[audioPhaenom:] No song found under " ${err_path} " !`
 
-var err_noSong = 'Es ist kein Song zum Abspielen ausgewählt.';
-var err_endOfList = 'Nach diesem Song gibt es keinen anderen mehr.';
-var err_startOfList = 'Vor diesem Song gibt es keinen anderen Song.';
+var err_path = 'undefined'; //this var will be used in a future update, to specify the error-messeage from audioPhaenom with the id err_songUndefined.
+
 //now setup your playlist.
 var songs = ['./tracks/1.mp3', './tracks/2.mp3', './tracks/3.mp3', './tracks/4.mp3']; //the source-array.
 var names = ['Ausnahmetalent', 'pulse.', 'Reflect', 'Weiße Augen III']; //the songtitle-array
@@ -18,6 +19,7 @@ var artists = ['HMeZ', 'HMeZ', 'HMeZ', 'HMeZ']; //the artists-array
 var albums = ['pulse.', 'pulse.', 'pulse.', 'pulse.']; //the albumName-array
 var maxIndex = 3; //the number of songs, you've definded minus one.
 
+//objects and eventlisteners
 var player = document.getElementById('player'); //switch 'player' with the id of your <audio> tag
 var scroller = document.getElementById('trackLaenge'); //switch 'trackLaenge' with the id of your <input type="range">
 scroller.addEventListener('input', scrolled, false); //don't change anything here
@@ -31,6 +33,7 @@ var playerSet = false; //if the player isn't setted up, there will be an error-a
 var index = 0; //set the index to 0, it will begin with the 1st song in the array.
 var timeKeeper = 0; //this var will keep the current play time
 var playing = false;
+
 //Lets start with some keybindings. I've used mousetrap for that, a little simple library to bind and unbind keyboard-keys with functions.
 Mousetrap.bind('left', jumpBack);
 Mousetrap.bind('right', jumpForward);
@@ -59,7 +62,7 @@ function initPlayer(startPlay) {
     index = 0; //set index to 1, but its actually 0, beceause arrays are 0-indicized
     playerSet = true; //setup, that the player is setted up
   } else {
-    alert(err_noSong) //THERE IS NO SONG IN THE PLAYLIST TO PLAY!
+    console.log(err_noSong) //THERE IS NO SONG IN THE PLAYLIST TO PLAY!
   }
   actualize(false);
   if (startPlay === true) {
