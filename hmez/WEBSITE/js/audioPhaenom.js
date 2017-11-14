@@ -51,10 +51,10 @@ function initializePhaenom() {
 }
 
 
-var audioPhaenom = {
+var audioPhaenom = { //this var contains the core of audioPhaenom.
   play: function() { //when play button pressed
     if (playerSet === false) { //if no song is setted up
-      audioPhaenom.initPlayer(true);
+      audioPhaenom.initPlayer(true); //initialize player and start playing after that
     } else { //IF THE PLAYER IS SETTED UP
       document.getElementById('c_play').src = './imgs/pause.svg'; //Virtualize, that there is now the option, to pause the playing
       player.src = songs[index]; //set the new source from the array
@@ -62,22 +62,22 @@ var audioPhaenom = {
       player.play(); //start the playing-process
       document.getElementById('c_play').removeEventListener('click', audioPhaenom.play, false); //change the eventlisteners, because the play button now should pause the track on click
       document.getElementById('c_play').addEventListener('click', audioPhaenom.pause, false); //change the eventlisteners, because the play button now should pause the track on click
-      Mousetrap.bind('space', audioPhaenom.pause);
-      playing = true;
-      audioPhaenom.actualize(false);
+      Mousetrap.bind('space', audioPhaenom.pause); //overwrite button-bindings
+      playing = true; //set the playing-status to true
+      audioPhaenom.actualize(false); //actualize songinfo, but don't start new song, beceause this will cause a loop
     }
   },
 
-  initPlayer: function(startPlay) {
+  initPlayer: function(startPlay) { //on first play/skip-event
     if (maxIndex > 0) { //if there are songs in the playlist
       index = 0; //set index to 1, but its actually 0, beceause arrays are 0-indicized
       playerSet = true; //setup, that the player is setted up
-    } else {
+    } else { //if there are no songs defined
       console.log(err_noSong) //THERE IS NO SONG IN THE PLAYLIST TO PLAY!
     }
-    audioPhaenom.actualize(false);
-    if (startPlay === true) {
-      audioPhaenom.play();
+    audioPhaenom.actualize(false); //actualize the playerinfo
+    if (startPlay === true) { //if it should start a new song
+      audioPhaenom.play(); //call the player
     }
   },
 
@@ -85,11 +85,11 @@ var audioPhaenom = {
     document.getElementById('songtitle').innerHTML = names[index]; //Change the songdescription
     document.getElementById('album').innerHTML = albums[index]; //Change the songdescription
     document.getElementById('artist').innerHTML = artists[index]; //Change the songdescription
-    if (playing === true && newSong === true) {
+    if (playing === true && newSong === true) { //if the actualizer schould start a new song AND the player is playing
       audioPhaenom.play();
-    } else if (newSong === true) {
-      scroller.value = 0;
-      player.currentTime = 0;
+    } else if (newSong === true) { //if the actualizer schould start a new song
+      scroller.value = 0; //set scrollervalue to 0
+      player.currentTime = 0; //set songposition to 0
     }
   },
 
@@ -131,7 +131,7 @@ var audioPhaenom = {
     document.getElementById('c_play').src = './imgs/play.svg'; //show, that now, there is the option to continue playing
     document.getElementById('c_play').removeEventListener('click', audioPhaenom.pause, false); //change eventlisteners
     document.getElementById('c_play').addEventListener('click', audioPhaenom.play, false); //chane eventlisteners
-    Mousetrap.bind('space', audioPhaenom.play);
+    Mousetrap.bind('space', audioPhaenom.play); //new button-binding
     playing = false; //set new state of playing
   },
 
