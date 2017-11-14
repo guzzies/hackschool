@@ -132,7 +132,7 @@ var audioPhaenom = {
     document.getElementById('c_play').removeEventListener('click', audioPhaenom.pause, false); //change eventlisteners
     document.getElementById('c_play').addEventListener('click', audioPhaenom.play, false); //chane eventlisteners
     Mousetrap.bind('space', audioPhaenom.play);
-    playing = false;
+    playing = false; //set new state of playing
   },
 
   scrollForwards: function() { //if scroll-button was pressed
