@@ -135,14 +135,14 @@ var audioPhaenom = {
     playing = false;
   },
 
-  scrollForwards: function() {
-    player.currentTime = player.currentTime + 5;
-    Mousetrap.bind('d', dummy);
+  scrollForwards: function() { //if scroll-button was pressed
+    player.currentTime = player.currentTime + 5; //set new time
+    Mousetrap.bind('d', dummy); //Set the binding to dummy. --> Ignore Button-downs until the next Update of the scroller
   },
 
-  scrollBackwards: function() {
-    player.currentTime = player.currentTime - 5;
-    Mousetrap.bind('a', dummy);
+  scrollBackwards: function() { //if scroll-button was pressed
+    player.currentTime = player.currentTime - 5; //set new time
+    Mousetrap.bind('a', dummy); //Set the binding to dummy. --> Ignore Button-downs until the next Update of the scroller
   },
 
   scrolled: function() { //if the scroller was changed
