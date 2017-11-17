@@ -8,10 +8,24 @@
 
 
 //At first, lets set up the error-messeages:
-var err_noSong = `[audioPhaenom:] No songs are defined.`;
-var err_songUndefined = `[audioPhaenom:] No song found under " ${err_path} " !`
-
-var err_path = 'undefined'; //this var will be used in a future update, to specify the error-messeage from audioPhaenom with the id err_songUndefined.
+var errorNotes = {
+  err_noSong: `[audioPhaenom:] No songs are defined.`,
+  err_songUndefined: `[audioPhaenom:] No song found under " ${this.err_path} " !`,
+  err_path: 'undefined' //this var will be used in a future update, to specify the error-messeage from audioPhaenom with the id err_songUndefined.
+  noSong = function(alertError) {
+    console.log(err_noSong);
+    if (alertError === true) {
+      alert(err_noSong);
+    }
+  },
+  undefined = function(path, alertError) {
+    this.err_path = path;
+    console.log(err_songUndefined);
+    if (alertError === true) {
+      alert(err_songUndefined);
+    }
+  },
+}
 
 //now setup your playlist.
 var songs = ['./tracks/1.mp3', './tracks/2.mp3', './tracks/3.mp3', './tracks/4.mp3']; //the source-array.
@@ -73,7 +87,7 @@ var audioPhaenom = { //this var contains the core of audioPhaenom.
       index = 0; //set index to 1, but its actually 0, beceause arrays are 0-indicized
       playerSet = true; //setup, that the player is setted up
     } else { //if there are no songs defined
-      console.log(err_noSong) //THERE IS NO SONG IN THE PLAYLIST TO PLAY!
+      errorNotes.noSong(true);
     }
     audioPhaenom.actualize(false); //actualize the playerinfo
     if (startPlay === true) { //if it should start a new song
