@@ -4,7 +4,7 @@ function hallo() {
     document.location.href = 'joona2.html';
     alert('Willkommen auf meiner Website du ' + yearsold + ' Jahre alter Mensch. (oder anderes Geschöpf)');
   } else {
-    document.location.href = 'joona.html';
+    document.location.href = 'games.html';
     alert('Mit ' + yearsold + ' Jahren ist dir der Zugang auf meiner Website verweigert.');
   }
 }
