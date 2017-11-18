@@ -2,200 +2,22 @@
 <html>
 
 <head>
+  <meta charset="utf-8" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick-theme.css" />
+  <script type="text/javascript" src="slick.min.js"></script>
   <link rel="stylesheet" type="text/css" href="Rubymygallery.css" />
   <link rel="stylesheet" type="text/css" href="Rubythreesome.css" />
 </head>
 
-
-
 <body>
-  <h1>My Gallery</h1>
-  <a href="Ruby.html"><button class="nav">HOME</button></a>
-  <img src="daisyexample.png" />
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 16</div>
-      <img src="flowergirl.jpg" style="width:50%">
-      <div class="text">Caption Text</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 16</div>
-      <img src="messer.jpg" style="width:50%">
-      <div class="text">Caption Two</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 16</div>
-      <img src="background.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 16</div>
-      <img src="klo.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">5 / 16</div>
-      <img src="Lisa Wirth 2.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">6 / 16</div>
-      <img src="nora.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">7 / 16</div>
-      <img src="rapunzel.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">8 / 16</div>
-      <img src="red riding hood22.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">9 / 16</div>
-      <img src="ruby.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">10 / 16</div>
-      <img src="rubyss.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">11 / 16</div>
-      <img src="rubysssss.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">12 / 16</div>
-      <img src="up.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">13 / 16</div>
-      <img src="viggelsgreen.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">14 / 16</div>
-      <img src="we four glasses.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">15 / 16</div>
-      <img src="yandere simulator.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">16 / 16</div>
-      <img src="yandere simuator2.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <div class="gallery">
+    <div><img src="yanderesimulator.png"></div>
+    <div><img src="klo.png"></div>
+    <div><img src="up.png"></div>
   </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-    <span class="dot" onclick="currentSlide(6)"></span>
-    <span class="dot" onclick="currentSlide(7)"></span>
-    <span class="dot" onclick="currentSlide(8)"></span>
-    <span class="dot" onclick="currentSlide(9)"></span>
-    <span class="dot" onclick="currentSlide(10)"></span>
-    <span class="dot" onclick="currentSlide(11)"></span>
-    <span class="dot" onclick="currentSlide(12)"></span>
-    <span class="dot" onclick="currentSlide(13)"></span>
-    <span class="dot" onclick="currentSlide(14)"></span>
-    <span class="dot" onclick="currentSlide(15)"></span>
-    <span class="dot" onclick="currentSlide(16)"></span>
-  </div>
-  </br>
-
-  <!doctype html>
-  <html>
-
-  <body>
-    <script>
-      document.getElementById("demo").innerHTML = "First JavaScript";
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1
-        }
-        if (n < 1) {
-          slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-      Automatic Slideshow
-
-
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000);
-      }
-    </script>
-  </body>
-
-  </html>
-
-
+  <script type="text/javascript" src="MyGallery.js"></script>
 </body>
 
 </html>
