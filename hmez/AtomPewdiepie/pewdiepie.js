@@ -12,7 +12,14 @@ function wurzelZiehen(zahl) {
   return Math.sqrt(zahl);
 }
 
-for (var c = 0; c < 50; c++) {
-  var wurzel = wurzelZiehen(c);
-  console.log(`Wurzel von ${c}: ${wurzel}!`);
-}
+
+var meinObjekt = {
+  name: 'HMeZ',
+  alter: 16,
+  schuhgroesse: 44
+};
+console.log(`${meinObjekt.name} ist der Name des Künstlers. Er ist ${meinObjekt.alter} Jahre alt und hat die Schuhgöße ${meinObjekt.schuhgroesse}`);
+meinObjekt.schuhgroesse = 100;
+meinObjekt.alter = 16349;
+meinObjekt.name = 'Godzilla';
+console.log(`${meinObjekt.name} ist der Name des Künstlers. Er ist ${meinObjekt.alter} Jahre alt und hat die Schuhgöße ${meinObjekt.schuhgroesse}`);
