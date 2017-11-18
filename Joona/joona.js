@@ -11,5 +11,11 @@ function hallo() {
 }
 function vanish() {
   var katze = document.getElementById('katze');
-  katze.className = "hidden";
+  if (katze.classList.contains("hidden")) {
+    katze.classList.remove("hidden");
+    katze.classList.add("show");
+  } else {
+    katze.classList.remove("show");
+    katze.classList.add("hidden");
+  }
 }

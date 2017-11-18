@@ -118,4 +118,27 @@ strong {
   animation-name: hide;
   animation-duration: 0.8s;
   animation-direction: normal;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show {
+  animation-name: show;
+  animation-duration: 0.8s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  opacity: 1;
+}
+
+.katze {
+  color: red;
 }
