@@ -92,3 +92,16 @@ button {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.hidden {
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #d64d4d;
+  animation: write 3s steps(42);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  height: 25px;
+  margin-top: 5px;
+  font-family: monospace;
+}

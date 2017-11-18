@@ -12,13 +12,13 @@ var errorNotes = {
   err_noSong: '[audioPhaenom:] No songs are defined.',
   err_songUndefined: '[audioPhaenom:] No song found under !',
   errNoSong: function(alertError) {
-    console.log(err_noSong);
+    console.error(err_noSong);
     if (alertError === true) {
       alert(err_noSong);
     }
   },
   undefined: function(path, alertError) {
-    console.log(err_songUndefined + path + " !");
+    console.error(err_songUndefined + path + " !");
     if (alertError === true) {
       alert(err_songUndefined + path + " !");
     }
@@ -165,3 +165,7 @@ function reloadscroller() { //this is a function, to reload the scroller, 2 time
   setTimeout(reloadscroller, 100); //set the cooldown in milliseconds
 }
 initializePhaenom(); //start the initialization
+
+
+function dummy() { //a simple function, used to generate some delay for the keys
+} //a simple function, used to generate some delay for the keys
