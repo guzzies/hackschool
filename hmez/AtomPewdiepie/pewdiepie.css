@@ -92,3 +92,24 @@ button {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.hidden {
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #d64d4d;
+  animation: vanish 4s;
+  animation-direction: normal;
+  height: 25px;
+  margin-top: 5px;
+  font-family: monospace;
+}
+
+@keyframes vanish {
+  from {
+    color: white;
+  }
+  to {
+    color: #d64d4d;
+  }
+}
