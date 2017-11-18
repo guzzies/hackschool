@@ -9,10 +9,7 @@ function hallo() {
     alert('Mit ' + yearsold + ' Jahren ist dir der Zugang auf meiner Website verweigert.');
   }
 }
-var opacity = 1;
 function vanish() {
   var katze = document.getElementById('katze');
-  // katze.className = "hidden";
-    opacity = opacity - 0.1;
-    katze.style = "opacity: " + opacity;
+  katze.className = "hidden";
 }
