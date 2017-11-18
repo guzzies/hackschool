@@ -7,4 +7,7 @@ var alda = {
   }
 };
 
-alda.ausgeben();
+
+console.log(alda.alter);
+alda.alter = 17;
+console.log(alda.alter);
