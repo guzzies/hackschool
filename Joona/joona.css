@@ -101,6 +101,12 @@ strong {
   }
 }
 
+@media (max-width:1080px) {
+  #container {
+    width: 100%;
+  }
+}
+
 .wichtig {
   color: red;
 }
