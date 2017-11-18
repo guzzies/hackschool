@@ -98,10 +98,18 @@ button {
   overflow: hidden;
   white-space: nowrap;
   color: #d64d4d;
-  animation: write 3s steps(42);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation: vanish 4s;
+  animation-direction: normal;
   height: 25px;
   margin-top: 5px;
   font-family: monospace;
+}
+
+@keyframes vanish {
+  from {
+    color: white;
+  }
+  to {
+    color: #d64d4d;
+  }
 }
