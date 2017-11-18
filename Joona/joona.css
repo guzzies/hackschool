@@ -100,3 +100,11 @@ strong {
     width: 100%;
   }
 }
+
+.wichtig {
+  color: red;
+}
+
+.hidden {
+  opacity: 0.5;
+}
