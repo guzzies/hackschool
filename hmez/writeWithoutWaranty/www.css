@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "wwwFont";
+  src: url("nunito-v9-latin-200italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "wwwFont2";
+  src: url("Impact_Label_Reversed.ttf") format("truetype");
+}
+
+body {
+  font-family: wwwFont;
+  background-color: black;
+}
+
+#container {
+  background-color: teal;
+  position: relative;
+  width: 80%;
+  height: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3%;
+}
+
+#wwwtext {
+  background-color: teal;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  font-family: wwwFont;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  color: white;
+}
+
+#tutorial {
+  color: white;
+  font-family: wwwFont;
+  font-size: 20;
+  text-align: center;
+}
+
+.title {
+  color: black;
+  position: relative;
+  height: 10%;
+  width: 80%;
+  text-shadow: 2px 2px teal;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 80px;
+  text-align: center;
+  font-family: wwwFont2;
+  animation-name: title;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes title {
+  0% {
+    text-shadow: 2px 2px teal;
+  }
+  25% {
+    text-shadow: 2px 2px red;
+  }
+  50% {
+    text-shadow: 2px 2px yellow;
+  }
+  75% {
+    text-shadow: 2px 2px purple;
+  }
+  100% {
+    text-shadow: 2px 2px teal;
+  }
+}
+
+#credits1 {
+  color: white;
+  font-family: wwwFont;
+  font-size: 25;
+  text-align: center;
+}
+
+#credits2 {
+  color: white;
+  font-family: wwwFont;
+  font-size: 20;
+  text-align: center;
+}
+
+#credits3 {
+  color: white;
+  font-family: wwwFont;
+  font-size: 15;
+  text-align: center;
+}
