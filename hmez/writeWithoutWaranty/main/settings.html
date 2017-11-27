@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WWOW - Settings</title>
+  <link rel="stylesheet" href="www.css">
+  <link rel="stylesheet" href="pewdiepie.css" />
+  <link href="ICON.png" rel="shortcut icon" />
+  <script type="text/javascript" src="baker.js"></script>
+</head>
+
+<body>
+
+  <div class="title" id="title">
+    Write without Warranty
+  </div>
+  <div class="main">
+    Die Verschwindeschnelligkeit liegt standartmäßig bei 25. <br />Mehr ist schneller; weniger langsamer.
+    <div class="formular">
+      <fieldset class="form" name="myform">
+        <legend>
+          <div class="divanim">
+            <span class="ANIMFONT" id="animfont">
+        Verschwindeschnelligkeit
+      </span>
+            <span class="courser">|</span>
+          </div>
+
+        </legend>
+        Wert:
+        <input id="namer" type="text" />
+        <button type="button" onclick="setIt()">Abschicken</button>
+      </fieldset>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var input = document.getElementById('namer');
+
+    function setIt() {
+      console.log('into setIt');
+      if (isNaN(input.value) === false) {
+        console.log('setted it!');
+        bakerJS.set('speed', input.value, 365)
+      } else {
+        console.log('detected error');
+        input.value = 'please enter a number!';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
