@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WWOW - Write without warranty</title>
+  <link rel="stylesheet" href="www.css">
+</head>
+
+<body onload="init()">
+  <div class="title" id="title">
+    Write without Warranty
+  </div>
+  <div class="main">
+    <p class="setting" id="toWWOW">
+      WriteWithoutWarranty starten
+    </p>
+    <p class="setting" id="toSettings">
+      Einstellungen (B E T A)
+    </p>
+  </div>
+  <script type="text/javascript">
+    function init() {
+      var goMain = document.getElementById('toWWOW');
+      var goSet = document.getElementById('toSettings');
+      goMain.addEventListener('click', goM, false);
+      goSet.addEventListener('click', goS, false);
+
+
+
+    }
+
+    function goM() {
+      window.location.href = window.location.href + 'home.html';
+    }
+
+    function goS() {
+      window.open(window.location.href + 'settings.html');
+    }
+  </script>
+</body>
+
+</html>
