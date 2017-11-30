@@ -14,7 +14,8 @@
 ###Implementiert
 
 ###ToDoFirst
->Standard (Ganz normales Tic-Tac-Toe, fügt ein X in der eigenen Farbe ein)
+>Miner (Ganz normales Tic-Tac-Toe, fügt ein X in der eigenen Farbe ein)
+>Overwriter (Kann über andere gelegte Karten plaziert werden, Überschreibt diese.)
 >Killer (Tötet nach dem Zug des Gegners einen zufälligen direkten Nachbarn. Ist dieser ein Surviver, stirbt der Killer)
 >Survivor (Tut nichts, ist allerdings durch den Killer nicht schlagbar.)
 >Mentalist (Wird ein Mentalist angegriffen, und existiert noch ein weiterer Mentalist, sterben alle an den ersten Mentalist angrenzenden Nachbarn, sowie alle Mentalisten. SIND ALLERDINGS 3 ODER MEHR MENTALISTEN AUF DEM SPIELFELD: MANA-PRODUKTION VERRINGERT SICH AUF DIE HÄLFTE!)
