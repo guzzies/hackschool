@@ -1,13 +1,11 @@
-var alda = {
-  name: 'Joona',
-  alter: 14,
-  schuhgroesse: 42,
-  ausgeben: function(){
-    console.log(this.name)
-  }
-};
-
-
-console.log(alda.alter);
-alda.alter = 17;
-console.log(alda.alter);
+function vanish(){
+  var kaninchen= document.getElementById('kaninchen')
+if(kaninchen.classList.contains("hidden")){
+  kaninchen.classList.remove ("hidden");
+  kaninchen.classList.add("show");
+}
+else{
+  kaninchen.classList.remove ("show");
+  kaninchen.classList.add ("hidden");
+}
+}

@@ -1,0 +1,115 @@
+fieldset {
+  color: #2e5631;
+  background-color: #caf9cd;
+  width: 400px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
+
+@keyframes write {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 0;
+  }
+  80% {
+    width: 24ch;
+  }
+}
+
+@keyframes courser {
+  from {
+    color: #d64d4d;
+  }
+  to {
+    color: white;
+  }
+}
+
+.courser {
+  color: white;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5px;
+  font-family: monospace;
+  animation: courser 1s steps(2);
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+.ANIMFONT {
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  animation: write 3s steps(48);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  height: 25px;
+  margin-top: 5px;
+  font-family: monospace;
+}
+
+.divanim {
+  display: flex;
+  flex-flow: row;
+}
+
+legend {
+  background-color: #d64d4d;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 20px;
+  height: 25px;
+  width: 25ch;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+button {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  background-color: #2e5631;
+  color: white;
+}
+
+.formular {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hidden {
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #d64d4d;
+  animation: vanish 4s;
+  animation-direction: normal;
+  height: 25px;
+  margin-top: 5px;
+  font-family: monospace;
+}
+
+@keyframes vanish {
+  from {
+    color: white;
+  }
+  to {
+    color: #d64d4d;
+  }
+}

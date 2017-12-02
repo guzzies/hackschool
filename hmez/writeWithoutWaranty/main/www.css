@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "wwwFont";
+  src: url("nunito-v9-latin-200italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "wwwFont2";
+  src: url("Impact_Label_Reversed.ttf") format("truetype");
+}
+
+body {
+  font-family: wwwFont;
+  background-color: white;
+  height: 95%;
+  text-align: center;
+}
+
+.main {
+  position: relative;
+  height: 200px;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.setting {
+  font-size: 60px;
+  height: 80px;
+  font-family: wwwFont;
+  color: black;
+}
+
+.setting:hover {
+  opacity: 0.5;
+}
+
+#container {
+  background-color: #2471a3;
+  position: relative;
+  width: 80%;
+  height: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#wwwdiv {
+  background-color: #2471a3;
+  position: relative;
+  width: 110%;
+  height: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1%;
+}
+
+#wwwtext:hover {
+  border-color: white;
+}
+
+#wwwtext:focus {
+  box-shadow: 0px 4px 18px black;
+  border-color: white;
+}
+
+#wwwtext {
+  background-color: #2471a3;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: wwwFont;
+  border-style: solid;
+  border-color: #1a5276;
+  border-width: 1px;
+  color: white;
+  resize: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9);
+}
+
+#tutorial {
+  color: white;
+  font-family: wwwFont;
+  font-size: 20;
+  text-align: center;
+}
+
+.title {
+  color: black;
+  position: relative;
+  height: 10%;
+  width: 80%;
+  text-shadow: 2px 2px black;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 80px;
+  text-align: center;
+  font-family: wwwFont2;
+  animation-name: title;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes title {
+  0% {
+    text-shadow: 2px 2px 2px black;
+  }
+  25% {
+    text-shadow: 2px 2px 2px #a04000;
+  }
+  50% {
+    text-shadow: 2px 2px 2px #154360;
+  }
+  75% {
+    text-shadow: 2px 2px 2px #641e16;
+  }
+  100% {
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
+#credits1 {
+  color: #333;
+  font-family: wwwFont;
+  font-size: 20;
+  text-align: center;
+  bottom: 5px;
+  padding-top: 10px;
+}
+
+#credits2 {
+  color: #333;
+  font-family: wwwFont;
+  font-size: 15;
+  text-align: center;
+}
+
+#credits3 {
+  color: #333;
+  font-family: wwwFont;
+  font-size: 10;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+  #container {
+    width: 100%;
+    height: 80%;
+  }
+  #wwwdiv {
+    background-color: teal;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1%;
+    padding-left: 0px;
+  }
+  .title {
+    color: black;
+    height: auto;
+    width: 100%;
+    text-shadow: 2px 2px teal;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    text-align: center;
+    font-family: wwwFont2;
+    animation-name: title;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  #credits1, #credits2, #credits3 {
+    font-size: 20px;
+    padding-top: 5px;
+    color: black;
+  }
+}
