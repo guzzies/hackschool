@@ -1,0 +1,150 @@
+body {
+  background-color: #1a1aff;
+  font-family: fantasy;
+  margin: 0px;
+  padding: 0px;
+}
+
+strong {
+  color: darkred;
+}
+
+.poet {
+  width: 500px;
+}
+
+#top {
+  background-color: #3498db;
+}
+
+#top a {
+  color: black;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#nav a {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  color: #2980b9;
+  text-decoration: none;
+}
+
+#yellow {
+  border-top: solid 5px yellow;
+}
+
+#blue {
+  border-top: solid 5px blue;
+}
+
+#green {
+  border-top: solid 5px green;
+}
+
+#red {
+  border-top: solid 5px red;
+}
+
+#shooter {
+  align-items: center;
+}
+
+#swtext {
+  margin-left: 180px;
+  margin-top: 40px;
+}
+
+#logo img {
+  width: 50px;
+}
+
+#slogo img {
+  width: 100px;
+}
+
+#trump {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#stext {
+  width: 400px;
+  padding-left: 2.5px;
+}
+
+#slogo {}
+
+#container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  min-height: 100vh;
+}
+
+@media (max-width:1024px) {
+  #container {
+    width: 600px;
+  }
+}
+
+@media (max-width:700px) {
+  #container {
+    width: 100%;
+  }
+}
+
+@media (max-width:1080px) {
+  #container {
+    width: 100%;
+  }
+}
+
+.wichtig {
+  color: red;
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  animation-name: hide;
+  animation-duration: 0.8s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show {
+  animation-name: show;
+  animation-duration: 0.8s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  opacity: 1;
+}
+
+.katze {
+  color: red;
+}
