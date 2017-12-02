@@ -1,6 +1,32 @@
 $icon-font-path: '../fonts/';
 // bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url("https://rappingmanual.com/wp-content/uploads/2013/03/Rap.jpg");
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    box-shadow: inset 0px 0px 10px black;
+    animation: bgjumbo 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bgjumbo {
+  from {
+        background-position: 0% 25%;
+  }
+  to {
+        background-position: 25% 0%;
+  }
+}
+
+
 
 .browserupgrade {
   margin: 0.2em 0;
