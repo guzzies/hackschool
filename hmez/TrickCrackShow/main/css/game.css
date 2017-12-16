@@ -12,14 +12,14 @@ body {
 
 #titleText {
   margin-top: -10px;
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   font-family: Main;
 }
 
 #under {
-  margin-top: -80px;
-  font-size: 55px;
+  margin-top: -40px;
+  font-size: 38px;
   text-align: center;
   font-family: Main;
 }
@@ -35,7 +35,8 @@ body {
   position: absolute;
   right: 100%;
   transform: translateX(50%);
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -46,14 +47,14 @@ body {
 }
 
 .Item {
-  width: 400px;
+  width: 200px;
   border-style: solid;
   border-radius: 6px;
   border-width: 5px;
   border-color: black;
   height: 100px;
   font-family: fantasy;
-  font-size: 60px;
+  font-size: 40px;
   color: black;
   margin: 20px;
   opacity: 0.5;
@@ -64,14 +65,14 @@ body {
 }
 
 .ItemSelected {
-  width: 400px;
+  width: 200px;
   border-style: solid;
   border-radius: 6px;
   border-width: 5px;
   border-color: black;
   height: 100px;
   font-family: fantasy;
-  font-size: 60px;
+  font-size: 40px;
   color: black;
   margin: 20px;
   box-shadow: 0px 0px 10px red;
@@ -86,8 +87,8 @@ body {
 
 .allGameFields {
   display: flex;
-  height: 600px;
-  width: 1300px;
+  height: 300px;
+  width: 650px;
   flex-flow: row;
   position: relative;
   left: 50%;
@@ -98,8 +99,8 @@ body {
   margin-top: 20px;
   position: relative;
   color: white;
-  height: 600px;
-  width: 600px;
+  height: 300px;
+  width: 300px;
   border-style: solid;
   border-color: black;
   border-width: thick;
@@ -109,8 +110,8 @@ body {
 .row {
   margin: 0;
   padding: 0;
-  height: 200px;
-  width: 600px;
+  height: 100px;
+  width: 400px;
   display: flex;
   flex-flow: row;
   flex-direction: row;
@@ -119,10 +120,10 @@ body {
 .field {
   margin: 0;
   padding: 0;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   background-image: url("scratchium.jpg");
-  background-size: 200px 200px;
+  background-size: 100px 100px;
 }
 
 .field:hover {
@@ -130,6 +131,21 @@ body {
   opacity: 0.8;
   animation: switch 0.2s steps(20);
   animation-direction: alternate;
+}
+
+.pointshow {}
+
+#onTurn {
+  font-family: fantasy;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  border-style: groove;
+  border-radius: 10px;
+  border-width: thin;
+  border-color: black;
+  box-shadow: 0px 0px 5px red;
+  margin: 5px;
 }
 
 /*ANIMATION*/
