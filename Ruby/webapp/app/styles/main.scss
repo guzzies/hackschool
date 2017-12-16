@@ -1,7 +1,7 @@
 $icon-font-path: '../fonts/';
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "bower_components/slick-carousel/slick/slick.scss";
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bower_components/slick-carousel/slick/slick.scss';
 // endbower
 
 .browserupgrade {
@@ -93,4 +93,17 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+.mustache {
+  .bild {
+    text-align: center;
+  }
+}
+.slick-slide img {
+  display: inline;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #003a90;
 }
