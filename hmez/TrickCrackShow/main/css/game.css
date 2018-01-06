@@ -12,14 +12,14 @@ body {
 
 #titleText {
   margin-top: -10px;
-  font-size: 60px;
+  font-size: 80px;
   text-align: center;
   font-family: Main;
 }
 
 #under {
-  margin-top: -40px;
-  font-size: 38px;
+  margin-top: -80px;
+  font-size: 55px;
   text-align: center;
   font-family: Main;
 }
@@ -35,8 +35,7 @@ body {
   position: absolute;
   right: 100%;
   transform: translateX(50%);
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /*overflow-y: scroll;*/
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -47,14 +46,14 @@ body {
 }
 
 .Item {
-  width: 200px;
+  width: 400px;
   border-style: solid;
   border-radius: 6px;
   border-width: 5px;
   border-color: black;
   height: 100px;
   font-family: fantasy;
-  font-size: 40px;
+  font-size: 60px;
   color: black;
   margin: 20px;
   opacity: 0.5;
@@ -65,14 +64,14 @@ body {
 }
 
 .ItemSelected {
-  width: 200px;
+  width: 400px;
   border-style: solid;
   border-radius: 6px;
   border-width: 5px;
   border-color: black;
   height: 100px;
   font-family: fantasy;
-  font-size: 40px;
+  font-size: 60px;
   color: black;
   margin: 20px;
   box-shadow: 0px 0px 10px red;
@@ -80,15 +79,15 @@ body {
 }
 
 #points {
-  position: absolute;
+  position: relative;
   left: 100%;
   transform: translateX(-50%);
 }
 
 .allGameFields {
   display: flex;
-  height: 300px;
-  width: 650px;
+  height: 600px;
+  width: 1300px;
   flex-flow: row;
   position: relative;
   left: 50%;
@@ -99,19 +98,29 @@ body {
   margin-top: 20px;
   position: relative;
   color: white;
-  height: 300px;
-  width: 300px;
+  height: 600px;
+  width: 600px;
   border-style: solid;
   border-color: black;
   border-width: thick;
   background-color: white;
 }
 
+#onTurnStatement {
+  color: white;
+  text-shadow: 1px 1px 5px #F32;
+  margin-top: 10px;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  font-family: Main;
+}
+
 .row {
   margin: 0;
   padding: 0;
-  height: 100px;
-  width: 400px;
+  height: 200px;
+  width: 600px;
   display: flex;
   flex-flow: row;
   flex-direction: row;
@@ -120,10 +129,10 @@ body {
 .field {
   margin: 0;
   padding: 0;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   background-image: url("scratchium.jpg");
-  background-size: 100px 100px;
+  background-size: 200px 200px;
 }
 
 .field:hover {
@@ -131,21 +140,6 @@ body {
   opacity: 0.8;
   animation: switch 0.2s steps(20);
   animation-direction: alternate;
-}
-
-.pointshow {}
-
-#onTurn {
-  font-family: fantasy;
-  font-size: 20px;
-  color: black;
-  text-align: center;
-  border-style: groove;
-  border-radius: 10px;
-  border-width: thin;
-  border-color: black;
-  box-shadow: 0px 0px 5px red;
-  margin: 5px;
 }
 
 /*ANIMATION*/
@@ -166,4 +160,48 @@ body {
 @font-face {
   font-family: "Main";
   src: url("Zombie_Holocaust.ttf") format("truetype");
+}
+
+/*SPECIAL FIELDS (WITH ENTITYS FROM DIFFERENT TEAMS)*/
+
+/*WHITE FIELDS*/
+
+/*white miner*/
+
+.wm {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  width: 200px;
+  background-image: url("lavarium.jpg");
+  background-size: 200px 200px;
+  src: url("./res/1w.png");
+}
+
+.wm:hover {
+  background-color: #DDD;
+  opacity: 0.5;
+  animation: switch 0.2s steps(20);
+  animation-direction: alternate;
+}
+
+/*BLACK FIELDS*/
+
+/*black miner*/
+
+.bm {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  width: 200px;
+  background-image: url("stonium.jpg");
+  background-size: 200px 200px;
+  src: url("./res/1b.png");
+}
+
+.bm:hover {
+  background-color: #DDD;
+  opacity: 0.5;
+  animation: switch 0.2s steps(20);
+  animation-direction: alternate;
 }
