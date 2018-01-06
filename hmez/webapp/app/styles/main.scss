@@ -3,15 +3,33 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
+
+body { padding-top: 120px; }
+#invisibleText {
+  opacity: 0;
+}
+
+#HMeZ {
+  height:100%;
+}
+
+#footbar {
+    box-shadow: 0px 0px 10px black;
+}
+
+.navbar{
+  box-shadow: 0px 0px 10px black;
+}
+
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url("https://rappingmanual.com/wp-content/uploads/2013/03/Rap.jpg");
-    background-position: 0% 25%;
+    background-image: url("/imgs/BG.png");
+    background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
-    box-shadow: inset 0px 0px 10px black;
+    box-shadow: inset 0px 0px 10px black, inset 0px 0px 20px black, inset 0px 0px 30px black, inset 0px 0px 40px black;
 }
 .browserupgrade {
   margin: 0.2em 0;
