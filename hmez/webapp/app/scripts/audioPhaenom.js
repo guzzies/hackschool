@@ -32,7 +32,7 @@ var playlist = {
   artists: ['HMeZ', 'HMeZ', 'HMeZ', 'HMeZ'], //the artists-array
   albums: ['pulse.', 'pulse.', 'pulse.', 'pulse.'], //the albumName-array
   maxIndex: 3 //the number of songs, you've definded minus one.
-}
+};
 
 
 //objects and eventlisteners
@@ -69,7 +69,7 @@ var audioPhaenom = { //this var contains the core of audioPhaenom.
     if (playerSet === false) { //if no song is setted up
       audioPhaenom.initPlayer(true); //initialize player and start playing after that
     } else { //IF THE PLAYER IS SETTED UP
-      document.getElementById('c_play').src = './imgs/pause.png'; //Virtualize, that there is now the option, to pause the playing
+      document.getElementById('cplayer').src = './imgs/pause.png'; //Virtualize, that there is now the option, to pause the playing
       player.src = playlist.songs[index]; //set the new source from the array
       player.currentTime = timeKeeper; //restart the track from the old time, if the track only was paused
       player.play(); //start the playing-process
@@ -99,7 +99,7 @@ var audioPhaenom = { //this var contains the core of audioPhaenom.
     document.title = playlist.artists[index] + '-' + playlist.names[index];
     if (playing === true && newSong === true) { //if the actualizer schould start a new song AND the player is playing
       audioPhaenom.play();
-    } else if (newSong === true) { //if the actualizer schould start a new song
+    } else if (newSong === true) { //if the actualizer should start a new song
       scroller.value = 0; //set scrollervalue to 0
       player.currentTime = 0; //set songposition to 0
     }
@@ -137,7 +137,7 @@ var audioPhaenom = { //this var contains the core of audioPhaenom.
   pause: function() { //pause playing
     player.pause(); //pause the actual player (<audio>)
     timeKeeper = player.currentTime; //keep the tracktime in mind!
-    document.getElementById('c_play').src = './imgs/play.png'; //show, that now, there is the option to continue playing
+    document.getElementById('cplayer').src = './imgs/play.png'; //show, that now, there is the option to continue playing
     document.getElementById('c_play').removeEventListener('click', audioPhaenom.pause, false); //change eventlisteners
     document.getElementById('c_play').addEventListener('click', audioPhaenom.play, false); //chane eventlisteners
     Mousetrap.bind('space', audioPhaenom.play); //new button-binding

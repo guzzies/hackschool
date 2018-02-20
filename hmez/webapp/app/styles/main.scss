@@ -16,7 +16,6 @@ body { padding-top: 120px; }
 
 .songinfo {
   font-family: nunito;
-  
   color: white;
   
 }
@@ -48,13 +47,13 @@ body { padding-top: 120px; }
 
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url("/imgs/BG.png");
+    background-image: url("/imgs/BG2.png");
     background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     text-shadow: rgba(0,0,0,0.4) 0.3em 0.3em 0.3em;
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.4), inset 0px 0px 20px rgba(0,0,0,0.4), inset 0px 0px 30px rgba(0,0,0,0.4), inset 0px 0px 40px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.6);
 }
 .browserupgrade {
   margin: 0.2em 0;
