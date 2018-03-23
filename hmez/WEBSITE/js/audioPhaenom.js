@@ -69,7 +69,7 @@ var audioPhaenom = { //this var contains the core of audioPhaenom.
     if (playerSet === false) { //if no song is setted up
       audioPhaenom.initPlayer(true); //initialize player and start playing after that
     } else { //IF THE PLAYER IS SETTED UP
-      document.getElementById('c_play').src = './imgs/pause.svg'; //Virtualize, that there is now the option, to pause the playing
+      document.getElementById('c_play').src = './imgs/pause.png'; //Virtualize, that there is now the option, to pause the playing
       player.src = playlist.songs[index]; //set the new source from the array
       player.currentTime = timeKeeper; //restart the track from the old time, if the track only was paused
       player.play(); //start the playing-process
@@ -137,7 +137,7 @@ var audioPhaenom = { //this var contains the core of audioPhaenom.
   pause: function() { //pause playing
     player.pause(); //pause the actual player (<audio>)
     timeKeeper = player.currentTime; //keep the tracktime in mind!
-    document.getElementById('c_play').src = './imgs/play.svg'; //show, that now, there is the option to continue playing
+    document.getElementById('c_play').src = './imgs/play.png'; //show, that now, there is the option to continue playing
     document.getElementById('c_play').removeEventListener('click', audioPhaenom.pause, false); //change eventlisteners
     document.getElementById('c_play').addEventListener('click', audioPhaenom.play, false); //chane eventlisteners
     Mousetrap.bind('space', audioPhaenom.play); //new button-binding

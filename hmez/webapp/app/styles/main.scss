@@ -5,8 +5,32 @@ $icon-font-path: '../fonts/';
 // endbower
 
 body { padding-top: 120px; }
-#invisibleText {
+.invisibleText {
   opacity: 0;
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("ttf/nunito.ttf") format("truetype");
+}
+
+.songinfo {
+  font-family: nunito;
+  color: white;
+  
+}
+
+.controllbutton {
+  width: 20%;
+}
+
+.divider {
+  height: 2px;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
 }
 
 #HMeZ {
@@ -14,22 +38,22 @@ body { padding-top: 120px; }
 }
 
 #footbar {
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
 }
 
 .navbar{
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
 }
 
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url("/imgs/BG.png");
+    background-image: url("/imgs/BG2.png");
     background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    text-shadow: black 0.3em 0.3em 0.3em;
-    box-shadow: inset 0px 0px 10px black, inset 0px 0px 20px black, inset 0px 0px 30px black, inset 0px 0px 40px black;
+    text-shadow: rgba(0,0,0,0.4) 0.3em 0.3em 0.3em;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.6);
 }
 .browserupgrade {
   margin: 0.2em 0;
