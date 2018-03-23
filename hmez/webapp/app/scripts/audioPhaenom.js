@@ -18,20 +18,21 @@ var errorNotes = {
     }
   },
   undefined: function(path, alertError) {
-    console.error(err_songUndefined + path + " !");
+    console.error(err_songUndefined + path + ' !');
     if (alertError === true) {
-      alert(err_songUndefined + path + " !");
+      alert(err_songUndefined + path + ' !');
     }
   }
 }
 
 //now setup your playlist.
 var playlist = {
-  songs: ['./tracks/1.mp3', './tracks/2.mp3', './tracks/3.mp3', './tracks/4.mp3'], //the source-array.
-  names: ['Ausnahmetalent', 'pulse.', 'Reflect', 'Weiße Augen III'], //the songtitle-array
-  artists: ['HMeZ', 'HMeZ', 'HMeZ', 'HMeZ'], //the artists-array
-  albums: ['pulse.', 'pulse.', 'pulse.', 'pulse.'], //the albumName-array
-  maxIndex: 3 //the number of songs, you've definded minus one.
+  songs: ['1-fire.mp3', '2-Victory.mp3', '3-reflect.mp3', '4-leben.mp3', '5-freestyle.(karma.).mp3', '6-negativpositiv.mp3', '7-weißeaugenIII.mp3', '8-strand.mp3', '9-klapse.mp3', '10-vielleicht.mp3'], //the source-array.
+  names: ['fire.', 'victory. (ft. T-Jes)', 'reflect.', 'leben.', 'freestyle. (karma.).', 'negativpositiv.', 'weißeaugendrei.', 'strand.', 'klapse.', 'vielleicht.'], //the songtitle-array
+  artists: ['HMeZ', 'HMeZ', 'HMeZ', 'HMeZ', 'HMeZ', 'HMeZ', 'HMeZ', 'HMeZ', 'HMeZ', 'HMeZ'], //the artists-array
+  albums: ['pulse.', 'pulse.', 'pulse.', 'pulse.', 'pulse.', 'pulse.', 'pulse.', 'pulse.', 'pulse.', 'pulse.'], //the albumName-array
+  maxIndex: 10, //the number of songs, you've definded minus one.
+  mainURL: 'http://mezler-home.synology.me/dominik/songs/'
 };
 
 
@@ -70,7 +71,7 @@ var audioPhaenom = { //this var contains the core of audioPhaenom.
       audioPhaenom.initPlayer(true); //initialize player and start playing after that
     } else { //IF THE PLAYER IS SETTED UP
       document.getElementById('cplayer').src = './imgs/pause.png'; //Virtualize, that there is now the option, to pause the playing
-      player.src = playlist.songs[index]; //set the new source from the array
+      player.src = playlist.mainURL + playlist.songs[index]; //set the new source from the array
       player.currentTime = timeKeeper; //restart the track from the old time, if the track only was paused
       player.play(); //start the playing-process
       document.getElementById('c_play').removeEventListener('click', audioPhaenom.play, false); //change the eventlisteners, because the play button now should pause the track on click

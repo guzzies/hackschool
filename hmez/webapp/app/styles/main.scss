@@ -1,14 +1,14 @@
-$icon-font-path: '../fonts/';
-// bower:scss
+$icon-font-path: '../fonts/'; // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "bower_components/slick-carousel/slick/slick.scss";
-// endbower
+@import "bower_components/slick-carousel/slick/slick.scss"; // endbower
 
-body { padding-top: 120px; }
+body {
+  padding-top: 120px;
+}
+
 .invisibleText {
   opacity: 0;
 }
-
 @font-face {
   font-family: "nunito";
   src: url("ttf/nunito.ttf") format("truetype");
@@ -17,7 +17,6 @@ body { padding-top: 120px; }
 .songinfo {
   font-family: nunito;
   color: white;
-  
 }
 
 .controllbutton {
@@ -26,110 +25,113 @@ body { padding-top: 120px; }
 
 .divider {
   height: 2px;
-  width:100%;
-  display:block; /* for use on default inline elements like span */
+  width: 100%;
+  display: block;
+  /* for use on default inline elements like span */
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
 
 #HMeZ {
-  height:100%;
+  height: 100%;
 }
 
 #footbar {
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.navbar{
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+.navbar {
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 .jumbotron {
-    margin-bottom: 0px;
-    background-image: url("/imgs/BG2.png");
-    background-position: 0% 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: rgba(0,0,0,0.4) 0.3em 0.3em 0.3em;
-    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.6);
+  margin-bottom: 0;
+  background-image: url("http://mezler-home.synology.me/dominik/imgs/BG2.png");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: rgba(0,0,0,0.4) 0.3em 0.3em 0.3em;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.6);
 }
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
-
 /* Space out content a bit */
+
 body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
+.footer,
 .header,
-.marketing,
-.footer {
+.marketing {
   padding-right: 15px;
   padding-left: 15px;
 }
-
 /* Custom page header */
+
 .header {
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
-
 /* Make the masthead heading the same height as the navigation */
+
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
 }
-
 /* Custom page footer */
+
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
-
 /* Customize container */
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
   }
 }
+
 .container-narrow > hr {
   margin: 30px 0;
 }
-
 /* Main marketing message and sign up button */
+
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
 }
-
 /* Supporting marketing content */
+
 .marketing {
   margin: 40px 0;
 }
+
 .marketing p + h4 {
   margin-top: 28px;
 }
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
+  .footer,
   .header,
-  .marketing,
-  .footer {
+  .marketing {
     padding-right: 0;
     padding-left: 0;
   }
