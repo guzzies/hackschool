@@ -1,0 +1,15 @@
+{
+  "generator-baumeister": {
+    "promptValues": {
+      "projectType": "staticSite",
+      "boilerplateAmount": "little",
+      "license": "All rights reserved",
+      "authorName": "bluewingtitan",
+      "authorUrl": "mezler-home.synology.me/bluewingtitan/",
+      "initialVersion": "0.1.0",
+      "additionalInfo": false,
+      "banners": true,
+      "addDistToVersionControl": false
+    }
+  }
+}
