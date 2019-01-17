@@ -3,7 +3,8 @@
 //feel free to modify and use the script for your own purposes,
 //for more infos, look up for the licence4audioPhaenom.md file, that you should find in the same folder as this file.
 //the license is only suitable for audioPhaenom, not for the tracks, you can play with audioPhaenom on my website.
-
+//This script is ment for useage without mousetrap, if you want to be able to use it with key-bindings, you may use
+//the version compatible with mousetrap and mousetrapJS itself :D
 
 
 //At first, lets set up the error-messeages:

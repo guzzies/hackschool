@@ -10,7 +10,7 @@
 //At first, lets set up the error-messeages:
 var errorNotes = {
   err_noSong: '[audioPhaenom:] No songs are defined.',
-  err_songUndefined: '[audioPhaenom:] No song found under !',
+  err_songUndefined: '[audioPhaenom:] No song found under ',
   errNoSong: function(alertError) {
     console.error(err_noSong);
     if (alertError === true) {
